@@ -1,0 +1,214 @@
+.dashboard {
+  padding: 40px 20px;
+  text-align: center;
+}
+
+.dashboard h1 {
+  font-size: 2.5rem;
+  margin-bottom: 20px;
+}
+
+.dashboard .chart-container {
+  margin-top: 40px;
+}
+
+.dashboard .product-gallery {
+  display: flex;
+  justify-content: center;
+  gap: 30px;
+  margin-top: 40px;
+}
+
+.product-card {
+  width: 200px;
+  height: 300px;
+  border-radius: 10px;
+  overflow: hidden;
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
+  transition: transform 0.3s ease-in-out;
+}
+
+.product-card:hover {
+  transform: scale(1.05);
+}
+
+.product-card img {
+  width: 100%;
+  height: 70%;
+  object-fit: cover;
+  transition: transform 0.5s ease-in-out;
+}
+
+.product-card:hover img {
+  transform: scale(1.1);
+}
+
+.product-card .product-info {
+  padding: 10px;
+  background-color: #fff;
+  text-align: left;
+}
+
+.product-card .product-info h3 {
+  font-size: 1.1rem;
+  margin-bottom: 10px;
+}
+
+.product-card .product-info p {
+  font-size: 0.9rem;
+  color: #777;
+}
+
+.product-management {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
+  padding: 40px;
+  background-color: #fff;
+  border-radius: 10px;
+  box-shadow: 0 4px 12px rgba(0, 0, 0, 0.1);
+  max-width: 600px;
+  margin: 20px auto;
+}
+
+.product-management h2 {
+  font-size: 2rem;
+  margin-bottom: 30px;
+}
+
+.product-management form {
+  display: flex;
+  flex-direction: column;
+  gap: 20px;
+  width: 100%;
+}
+
+.product-management input,
+.product-management select {
+  padding: 12px;
+  font-size: 16px;
+  border-radius: 5px;
+  border: 1px solid #ddd;
+  outline: none;
+}
+
+.product-management input:focus,
+.product-management select:focus {
+  border-color: #3498db;
+}
+
+.product-management button {
+  align-self: flex-start;
+  padding: 12px 30px;
+  font-size: 18px;
+  background-color: #3498db;
+  border-radius: 5px;
+  color: white;
+  transition: background-color 0.3s ease;
+}
+
+.product-management button:hover {
+  background-color: #2980b9;
+}
+
+.login-container {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  height: 100vh;
+  background-color: #ecf0f1;
+}
+
+.login-form {
+  background-color: white;
+  padding: 40px;
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+  border-radius: 10px;
+  width: 100%;
+  max-width: 400px;
+}
+
+.login-form h2 {
+  text-align: center;
+  margin-bottom: 20px;
+  color: #333;
+}
+
+.login-form input {
+  width: 100%;
+  padding: 12px;
+  margin-bottom: 20px;
+  border: 1px solid #ddd;
+  border-radius: 5px;
+  font-size: 16px;
+}
+
+.login-form input:focus {
+  border-color: #3498db;
+}
+
+.login-form button {
+  width: 100%;
+  padding: 12px;
+  background-color: #3498db;
+  color: white;
+  border-radius: 5px;
+  font-size: 16px;
+  cursor: pointer;
+  transition: background-color 0.3s ease;
+}
+
+.login-form button:hover {
+  background-color: #2980b9;
+}
+.product-card img {
+  width: 100%;
+  height: 70%;
+  object-fit: cover;
+  transition: transform 0.5s ease-in-out;
+  transform-origin: center center;
+}
+
+.product-card:hover img {
+  transform: scale(1.1) rotate(5deg);
+}
+@keyframes fadeIn {
+  0% {
+    opacity: 0;
+    transform: translateY(-30px);
+  }
+  100% {
+    opacity: 1;
+    transform: translateY(0);
+  }
+}
+
+.product-management,
+.login-form {
+  animation: fadeIn 0.8s ease-out;
+}
+
+/* Make the dashboard gallery and form responsive */
+@media (max-width: 768px) {
+  .product-gallery {
+    flex-direction: column;
+    gap: 20px;
+  }
+
+  .product-management,
+  .login-form {
+    width: 90%;
+  }
+}
+
+@media (max-width: 480px) {
+  .dashboard h1 {
+    font-size: 2rem;
+  }
+
+  .product-card {
+    width: 160px;
+    height: 250px;
+  }
+}

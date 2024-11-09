@@ -1,0 +1,39 @@
+/* Global styles for the entire application */
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  font-family: 'Arial', sans-serif;
+}
+
+body {
+  background-color: #f4f4f9;
+  color: #333;
+  font-size: 16px;
+  line-height: 1.6;
+}
+
+h1, h2 {
+  color: #333;
+  font-weight: 600;
+}
+
+button {
+  padding: 10px 20px;
+  border: none;
+  background-color: #3498db;
+  color: white;
+  font-size: 16px;
+  cursor: pointer;
+  transition: background-color 0.3s ease;
+}
+
+button:hover {
+  background-color: #2980b9;
+}
+
+.container {
+  max-width: 1200px;
+  margin: 0 auto;
+  padding: 20px;
+}
